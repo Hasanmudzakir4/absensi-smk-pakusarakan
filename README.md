@@ -4,6 +4,14 @@ Aplikasi Absensi Sekolah adalah solusi digital berbasis **Flutter** (mobile dan 
 
 ---
 
+## 📱 Preview Antarmuka Pengguna
+
+<p align="center">
+  <img src="assets/images/deskripsi-apk.jpg"/>
+</p>
+
+---
+
 ## 🚀 Fitur Utama
 
 ### 🔐 Autentikasi
@@ -67,19 +75,59 @@ Aplikasi Absensi Sekolah adalah solusi digital berbasis **Flutter** (mobile dan 
 
 ---
 
-## 📱 Preview Antarmuka Pengguna
-
-<p align="center">
-  <img src="assets/images/deskripsi-apk.jpg"/>
-</p>
-
----
-
 ## 📦 Cara Menjalankan
 
 ### 1. Clone Repository:
 
 ```bash
-git clone https://github.com/Hasanmudzakir4/absensi-sekolah.git
-cd absensi-sekolah
+git clone https://github.com/Hasanmudzakir4/absensi-smk-pakusarakan.git
 ```
+
+### 2. Masuk ke Direktori Proyek:
+
+```bash
+cd absensi_smk_pakusarakan
+```
+
+### 2. Install Dependencies:
+
+```bash
+flutter pub get
+```
+
+### 4. Setup Firebase (Android)
+
+- Buat project di [Firebase Console](https://console.firebase.google.com/)
+- Aktifkan Authentication (Email/Password) & Firestore
+- Unduh google-services.json dan letakkan di /android/app/
+
+### 5. Jalankan Aplikasi di Android
+
+```bash
+flutter run
+```
+
+### 6. Setup Firebase Web
+
+```bash
+flutterfire configure
+```
+
+- Pilih project Firebase yang sudah dibuat
+- Pilih platform Web
+- File firebase_options.dart akan otomatis di-generate
+
+### 7. Jalankan Aplikasi di Browser (Chrome)
+
+```bash
+flutter run -d chrome
+```
+
+## 📲 Unduh Aplikasi
+
+Silakan unduh dan coba aplikasi melalui tautan berikut:
+
+👉 [App Absensi](https://appdistribution.firebase.dev/i/1223f8745732d035)
+👉 [App Web (Admin & Guru)](https://absensi-smk-pakusarakan.web.app/)
+
+© 2025 Aplikasi Absensi. Dibuat untuk memenuhi tugas based project menggunakan Flutter dan Firebase.
